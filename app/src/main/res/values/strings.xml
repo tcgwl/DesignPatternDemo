@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">设计模式练习</string>
+
+    <string name="strategy_pattern">策略模式</string>
+    <string name="strategy_pattern_title">策略模式 以角色游戏为背景</string>
+    <string name="strategy_pattern_desc">定义了算法族，分别封装起来，让它们之间可相互替换，此模式让算法的变化独立于使用算法的客户。</string>
+
+    <string name="observer_pattern">观察者模式</string>
+    <string name="observer_pattern_title">观察者模式 以微信公众服务为例</string>
+    <string name="observer_pattern_desc">定义了对象之间的一对多的依赖，这样一来，当一个对象改变时，它的所有的依赖者都会收到通知并自动更新。例：addXXXListener</string>
+
+    <string name="decorator_pattern">装饰者模式</string>
+    <string name="decorator_pattern_title">装饰者模式 带你重回传奇世界</string>
+    <string name="decorator_pattern_desc">若要扩展功能，装饰者提供了比集成更有弹性的替代方案，动态地将责任附加到对象上。\n适用场景：需要给这个类添加一些辅助的功能，并且不希望改变这个类的代码。例：I/O流</string>
+
+    <string name="factory_pattern">工厂模式</string>
+    <string name="factory_pattern_title">工厂模式 从卖肉夹馍说起</string>
+    <string name="factory_pattern_desc">包括：静态工厂模式，简单工厂模式，工厂方法模式，抽象工厂模式。</string>
+</resources>
