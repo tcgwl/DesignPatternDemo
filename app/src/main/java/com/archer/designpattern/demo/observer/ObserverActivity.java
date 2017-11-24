@@ -13,22 +13,23 @@ import com.archer.designpattern.demo.observer.diy.Observer2;
 import com.archer.designpattern.demo.observer.diy.SubjectFor3D;
 
 public class ObserverActivity extends AppCompatActivity {
+    private static final String TAG = "Observer";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_observer);
 
-        Log.d("Observer", "自己实现观察者模式");
+        Log.d(TAG, "自己实现观察者模式");
         SubjectFor3D subjectFor3D = new SubjectFor3D();
         Observer1 observer1 = new Observer1(subjectFor3D);
         Observer2 observer2 = new Observer2(subjectFor3D);
         subjectFor3D.setMsg("20160520的3D号码是：168");
         subjectFor3D.setMsg("20160521的3D号码是：856");
 
-        Log.d("Observer", "------------------------");
+        Log.d(TAG, "------------------------");
 
-        Log.d("Observer", "使用Java内置的类实现观察者模式");
+        Log.d(TAG, "使用Java内置的类实现观察者模式");
         SubjectFor3DWithApi subjectFor3DWithApi = new SubjectFor3DWithApi();
         SubjectForSSQWithApi subjectForSSQWithApi = new SubjectForSSQWithApi();
         Observer1WithApi observer1WithApi = new Observer1WithApi();

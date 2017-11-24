@@ -1,10 +1,13 @@
 package com.archer.designpattern.demo.factory.b;
 
+import android.util.Log;
+
 /**
  * 肉夹馍
  */
 
 public abstract class RouJiaMo {
+    private static final String TAG = "Factory";
     protected String name;
 
     /**
@@ -12,22 +15,22 @@ public abstract class RouJiaMo {
      */
     public final void prepare(RouJiaMoYLFactory ylFactroy) {
         Meat meat = ylFactroy.createMeat();
-        TiaoLiao yuanliao = ylFactroy.createTiaoLiao();
-        System.out.println("使用官方的原料 " + meat + ", " + yuanliao + " 作为原材料制作肉夹馍~");
+        TiaoLiao tiaoLiao = ylFactroy.createTiaoLiao();
+        Log.d(TAG, "使用官方的原料 " + meat + ", " + tiaoLiao + " 作为原材料制作肉夹馍~");
     }
 
     /**
      * 包装
      */
     public final void pack() {
-        System.out.println("肉夹馍-专用袋-包装");
+        Log.d(TAG, "肉夹馍-专用袋-包装");
     }
 
     /**
      * 烘烤
      */
     public final void fire() {
-        System.out.println("肉夹馍-专用设备-烘烤");
+        Log.d(TAG, "肉夹馍-专用设备-烘烤");
     }
 
     public String getName() {

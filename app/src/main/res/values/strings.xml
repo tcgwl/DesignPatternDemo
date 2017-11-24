@@ -16,4 +16,28 @@
     <string name="factory_pattern">工厂模式</string>
     <string name="factory_pattern_title">工厂模式 从卖肉夹馍说起</string>
     <string name="factory_pattern_desc">包括：静态工厂模式，简单工厂模式，工厂方法模式，抽象工厂模式。</string>
+
+    <string name="singleton_pattern">单例模式</string>
+    <string name="singleton_pattern_title">单例模式</string>
+    <string name="singleton_pattern_desc">介绍几种线程安全的方式: \n恶汉，懒汉，枚举，使用一个持有类。\n除了第一种会在类加载的时候初始化，其他3种都不会，且4种方式都保证线程安全，特殊情况（除了多个类加载器，和通过反射等手段生成多个对象）不考虑。</string>
+
+    <string name="command_pattern">命令模式</string>
+    <string name="command_pattern_title">命令模式 管理智能家电</string>
+    <string name="command_pattern_desc">定义：将“请求”封装成对象，以便使用不同的请求、队列或者日志来参数化其他对象。命令模式也支持可撤销的操作。\n命令模式就是把命令封装成对象，然后将动作请求者与动作执行者完全解耦，比如例子中遥控器的按钮和电器就没有关系。</string>
+
+    <string name="adapter_pattern">适配器模式</string>
+    <string name="adapter_pattern_title">适配器模式 以手机充电器为例</string>
+    <string name="adapter_pattern_desc">定义：将一个类的接口转换成客户期望的另一个接口，适配器让原本接口不兼容的类可以相互合作。\n适配器的功能就是把一个接口转成另一个接口。</string>
+
+    <string name="facade_pattern">外观模式</string>
+    <string name="facade_pattern_title">外观模式 一键电影模式</string>
+    <string name="facade_pattern_desc">定义：提供一个统一的接口，用来访问子系统中的一群接口，外观定义了一个高层的接口，让子系统更容易使用。\n其实就是为了方便客户的使用，把一群操作，封装成一个方法。\n一般用于需要简化一个很大的接口，或者一群复杂的接口的时候。</string>
+
+    <string name="template_pattern">模版方法模式</string>
+    <string name="template_pattern_title">模版方法模式 展现程序员的一天</string>
+    <string name="template_pattern_desc">定义了一个算法的骨架，而将一些步骤延迟到子类中，模版方法使得子类可以在不改变算法结构的情况下，重新定义算法的步骤。\n简单看下定义，模版方法定义了一个算法的步骤，并且允许子类为一个或多个步骤提供实现。</string>
+
+    <string name="status_pattern">状态模式</string>
+    <string name="status_pattern_title">状态模式 以自动售货机为例</string>
+    <string name="status_pattern_desc">定义：允许对象在内部状态改变时改变它的行为，对象看起来好像修改了它的类。\n定义又开始模糊了，理一下，当对象的内部状态改变时，它的行为跟随状态的改变而改变了，看起来好像重新初始化了一个类似的。</string>
 </resources>

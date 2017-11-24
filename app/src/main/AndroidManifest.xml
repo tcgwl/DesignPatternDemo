@@ -24,6 +24,18 @@
         </activity>
         <activity android:name=".factory.FactoryActivity">
         </activity>
+        <activity android:name=".singleton.SingletonActivity">
+        </activity>
+        <activity android:name=".command.CommandActivity">
+        </activity>
+        <activity android:name=".adapter.AdapterActivity">
+        </activity>
+        <activity android:name=".facade.FacadeActivity">
+        </activity>
+        <activity android:name=".template.TemplateActivity">
+        </activity>
+        <activity android:name=".status.StatusActivity">
+        </activity>
     </application>
 
 </manifest>

@@ -2,6 +2,7 @@ package com.archer.designpattern.demo.factory;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 
 import com.archer.designpattern.demo.R;
 import com.archer.designpattern.demo.factory.b.RouJiaMo;
@@ -16,6 +17,6 @@ public class FactoryActivity extends AppCompatActivity {
 
         XianRouJiaMoStore xianRouJiaMoStore = new XianRouJiaMoStore();
         RouJiaMo rouJiaMo = xianRouJiaMoStore.sellRouJiaMo("Suan");
-        System.out.println(rouJiaMo.getName());
+        Log.d("Factory", rouJiaMo.getName());
     }
 }
